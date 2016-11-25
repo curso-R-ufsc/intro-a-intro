@@ -6,11 +6,21 @@ attachments :
 --- type:NormalExercise lang:r xp:100 skills:1 key:aee54d223d
 ## <<<O início>>> 
 
-Para começar o que é o `R`? De acordo com a definição da comunidade [neste link](http://pt.stackoverflow.com/tags/r/info), o R é um ambiente e linguagem de programação de código aberto para computação estatística, bioinformática e gráficos.
+Para começar o que é o `R`? De acordo com a definição da comunidade [neste link](http://pt.stackoverflow.com/tags/r/info), o R é um ambiente e linguagem de programação de código aberto para computação estatística, bioinformática e gráficos. Legal! E o que isso quer dizer? Bem, quer dizer que ele é capaz de realizar cálculos grandes e complexos com enorme confiabilidade e rapidez.
+
+Este "curso" no DataCamp é apenas uma apresentação muito rápida daquilo que é extremamente básico no R, isto é:
+
+1. Uma apresentação inicial do R e deste site
+
+2. Ferramentas, pacotes e comunidade
+
+3. Objetos
+
+4. Tipos de objetos
 
 
 *** =instructions
-
+Apenas aperte o botão "Submit" para começarmos o curso
 *** =hint
 
 *** =pre_exercise_code
@@ -20,7 +30,7 @@ Para começar o que é o `R`? De acordo com a definição da comunidade [neste l
 
 *** =sample_code
 ```{r}
-
+# 
 ```
 
 *** =solution
@@ -30,7 +40,7 @@ Para começar o que é o `R`? De acordo com a definição da comunidade [neste l
 
 *** =sct
 ```{r}
-
+success_msg("Bora lá!")
 ```
 --- type:NormalExercise lang:r xp:100 skills:1 key:63e01c769d
 ## More movies
