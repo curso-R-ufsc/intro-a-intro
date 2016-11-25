@@ -104,7 +104,7 @@ Você logo logo perceberá que você precisará pedir ajuda muito frequentemente
 
 O primeiro deles é o próprio `R`: há uma função para pedir ajuda sobre outras funções e documentação do `R` em geral, `help('alguma_funcao')`. Ela também pode ser acessada por `?alguma_funcao`.
 
-Há ainda outra forma de pedir ajuda: `help.search("alguma duvida")` ou `??"alguma duvida"`. Nesta você pode botar um tema ou uma expressão (não funciona neste site).
+Há ainda outra forma de pedir ajuda: `help.search("alguma duvida")` ou `??"alguma duvida"`. Nesta você pode botar um tema ou uma expressão.
 
 A última maneira é pedir ajuda a outras pessoas. Uma ótima forma de fazer isso é por meio do site de perguntas e respostas [StackOverflow](http://pt.stackoverflow.com/). Tem até dicas sobre [como fazer](http://pt.stackoverflow.com/help/how-to-ask) uma pergunta.
 
@@ -125,25 +125,33 @@ Chegou a sua vez:
 
 *** =sample_code
 ```{r}
-# Peça ajuda sobre a função 'max'
+# Peça ajuda sobre a função 'max': help(max)
 
+# Agora busque pela expressão "regression" (as aspas são necessárias aqui)
 
 ```
 
 *** =solution
 ```{r}
-# Peça ajuda sobre a função 'max'
+# Peça ajuda sobre a função 'max': help(max)
 help(max)
-
+# Agora busque pela expressão "regression" (as aspas são necessárias aqui)
+help.search("regression")
 ```
 
 *** =sct
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-test_function("help", args = "max",
-              not_called_msg = "Você se esqueceu de usar a `?`",
-              incorrect_msg = "Tem certeza que buscou pelo funcao `max`?")
+test_student_typed(c("help(max)",
+                     "?max"),
+                   not_typed_msg = "Você se esqueceu de usar a `?` ou a funcao help(max)")
 
-success_msg("Good work!")
+test_student_typed(c('help.search("regression")',
+                     '??"regression"'),
+                   not_typed_msg = "Você se esqueceu de usar a `?` ou a funcao help(max)")
+test_function("help.search", args = "regression")
+
+
+success_msg("Muito bem! Agora que voce ja sabe tirar sua duvidas, vamos colocar algumas na sua mente!")
 ```
