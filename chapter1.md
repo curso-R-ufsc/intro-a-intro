@@ -147,8 +147,7 @@ test_student_typed(c("help(max)",
                      "?max"),
                    not_typed_msg = "Você se esqueceu de usar a `?` ou a funcao help(max)")
 
-test_student_typed(c('help.search("regression")',
-                     '??"regression"'),
+test_student_typed(c('help.search("regression")'),
                    not_typed_msg = "Você se esqueceu de usar a `??` ou a funcao help.search(max)")
 
 
