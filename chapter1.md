@@ -133,7 +133,7 @@ Chegou a sua vez:
 *** =solution
 ```{r}
 # Peça ajuda sobre a função 'max'
-?max
+help(max)
 
 ```
 
@@ -141,7 +141,7 @@ Chegou a sua vez:
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-test_function("help",
+test_function("help", args = max,
               not_called_msg = "Você se esqueceu de usar a `?`",
               incorrect_msg = "Tem certeza que buscou pelo funcao `max`?")
 
