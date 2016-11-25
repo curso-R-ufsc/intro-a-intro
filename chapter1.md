@@ -128,15 +128,17 @@ Chegou a sua vez:
 # Peça ajuda sobre a função 'max'
 
 # Agora busque pela expressão "regression" (as aspas são necessárias aqui)
+# help.search("regression")
 
 ```
 
 *** =solution
 ```{r}
-# Peça ajuda sobre a função 'max': ?max
-?max
+# Peça ajuda sobre a função 'max': help(max)
+help(max)
 # Agora busque pela expressão "regression" (as aspas são necessárias aqui)
-??"regression"
+# help.search("regression")
+help.search("regression")
 ```
 
 *** =sct
