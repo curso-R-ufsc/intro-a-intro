@@ -5,7 +5,9 @@ attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:aee54d223d
-## <<<New Exercise>>> 
+## <<<O início>>> 
+
+Para começar o que é o `R`? De acordo com a definição da comunidade [neste link](http://pt.stackoverflow.com/tags/r/info), o R é um ambiente e linguagem de programação de código aberto para computação estatística, bioinformática e gráficos.
 
 
 *** =instructions
