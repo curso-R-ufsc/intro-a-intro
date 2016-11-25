@@ -135,21 +135,21 @@ Chegou a sua vez:
 *** =solution
 ```{r}
 # Peça ajuda sobre a função 'max': help(max)
-help(max)
+?max
 # Agora busque pela expressão "regression" (as aspas são necessárias aqui)
 # help.search("regression")
-help.search("regression")
+??"regression"
 ```
 
 *** =sct
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-test_function("help", args = "max",
+test_function("?", args = "max",
               not_called_msg = "Você se esqueceu de usar a `?`",
-              incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
+              incorrect_msg = "Tem certeza que buscou pelo funcao `max`?")
 
-test_function("help.search", args = "'regression'")
+test_function("??", args = "'regression'")
 
 
 success_msg("Good work!")
