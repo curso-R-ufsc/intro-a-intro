@@ -104,7 +104,7 @@ Você logo logo perceberá que você precisará pedir ajuda muito frequentemente
 
 O primeiro deles é o próprio `R`: há uma função para pedir ajuda sobre outras funções e documentação do `R` em geral, `help('alguma_funcao')`. Ela também pode ser acessada por `?alguma_funcao`.
 
-Há ainda outra forma de pedir ajuda: `help.search("alguma duvida")` ou `??"alguma duvida"`. Nesta você pode botar um tema ou uma expressão.
+Há ainda outra forma de pedir ajuda: `help.search("alguma duvida")` ou `??"alguma duvida"`. Nesta você pode botar um tema ou uma expressão (não funciona neste site).
 
 A última maneira é pedir ajuda a outras pessoas. Uma ótima forma de fazer isso é por meio do site de perguntas e respostas [StackOverflow](http://pt.stackoverflow.com/). Tem até dicas sobre [como fazer](http://pt.stackoverflow.com/help/how-to-ask) uma pergunta.
 
@@ -125,17 +125,15 @@ Chegou a sua vez:
 
 *** =sample_code
 ```{r}
-# Peça ajuda sobre a função 'max': help(max)
+# Peça ajuda sobre a função 'max'
 
-# Agora busque pela expressão "regression" (as aspas são necessárias aqui)
-# help.search("regression")
 
 ```
 
 *** =solution
 ```{r}
-# Peça ajuda sobre a função 'max': help(max)
-help(max)
+# Peça ajuda sobre a função 'max'
+?max
 
 ```
 
