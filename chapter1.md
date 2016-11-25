@@ -120,59 +120,35 @@ Chegou a sua vez:
 
 *** =pre_exercise_code
 ```{r}
-# You can also prepare your dataset in a specific way in the pre exercise code
 
-library(MindOnStats)
-data(Movies)
-movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"),c("Genre", "Rating", "Run")]
-
-# Clean up the environment
-rm(Movies)
 ```
 
 *** =sample_code
 ```{r}
-# movie_selection is available in your workspace
+# Peça ajuda sobre a função 'max'
 
-# Check out the structure of movie_selection
-
-
-# Select movies that have a rating of 5 or higher: good_movies
-
-
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
+# Agora busque pela expressão "regression" (as aspas são necessárias aqui)
 
 ```
 
 *** =solution
 ```{r}
-# movie_selection is available in your workspace
-
-# Check out the structure of movie_selection
-str(movie_selection)
-
-# Select movies that have a rating of 5 or higher: good_movies
-good_movies <- movie_selection[movie_selection$Rating >= 5, ]
-
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
+# Peça ajuda sobre a função 'max': ?max
+?max
+# Agora busque pela expressão "regression" (as aspas são necessárias aqui)
+??"regression"
 ```
 
 *** =sct
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-test_function("str", args = "object",
-              not_called_msg = "You didn't call `str()`!",
+test_function("help", args = "object",
+              not_called_msg = "Você se esqueceu de usar a `?`",
               incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
 
-test_object("good_movies")
+test_function("help.search", args = "'regression'")
 
-test_function("plot", args = "x")
-test_function("plot", args = "y")
-test_function("plot", args = "col")
-
-test_error()
 
 success_msg("Good work!")
 ```
