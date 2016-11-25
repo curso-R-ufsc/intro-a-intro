@@ -41,7 +41,7 @@ Apenas aperte o botão "Submit" para começarmos o curso
 *** =sct
 ```{r}
 
-success_msg("Bora lá!")
+success_msg("Bora la!")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:dcb32212d2
@@ -71,8 +71,10 @@ Leia as intruções no script.
 # Se você apertar ctrl + enter apenas a linha selecionada será executada
 # Se você clicar em "Submit" todo o conteúdo do script é executado
 
-# Agora que você sabe como não fazer nada, digite 15 na linha abaixo
+# Agora que você sabe como não fazer nada, digite '5 + 10' na linha abaixo
 
+
+# E veja o comando ser executado no console (abaixo)
 ```
 
 *** =solution
@@ -82,31 +84,39 @@ Leia as intruções no script.
 # Se você apertar ctrl + enter apenas a linha selecionada será executada
 # Se você clicar em "Submit" todo o conteúdo do script é executado
 
-# Agora que você sabe como não fazer nada, digite 15 na linha abaixo
-15
+# Agora que você sabe como não fazer nada, digite '5 + 10' na linha abaixo
+5 + 10
+
+# E veja o comando ser executado no console (abaixo)
 ```
 
 *** =sct
 ```{r}
-test_output_contains(15,
-                     incorrect_msg = "Voce precisa escrever o numero 15!")
-success_msg("Muito bem!! Viu como e facil imprimir algo?")
+test_output_contains("5+10",
+                     incorrect_msg = "Voce precisa somar 5 e 10 para terminar este exercicio!")
+success_msg("Muito bem!! Viu como e facil fazer uma conta?")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:63e01c769d
-## Outro título
+## Pedindo ajuda
 
+Você logo logo perceberá que você precisará pedir ajuda muito frequentemente. Você pode fazer isso por alguns canais.
 
+O primeiro deles é o próprio `R`: há uma função para pedir ajuda sobre outras funções e documentação do `R` em geral, `help('alguma_funcao')`. Ela também pode ser acessada por `?alguma_funcao`.
+
+Há ainda outra forma de pedir ajuda: `help.search("alguma duvida")` ou `??"alguma duvida"`. Nesta você pode botar um tema ou uma expressão.
+
+A última maneira é pedir ajuda a outras pessoas. Uma ótima forma de fazer isso é por meio do site de perguntas e respostas [StackOverflow](http://pt.stackoverflow.com/). Tem até dicas sobre [como fazer](http://pt.stackoverflow.com/help/how-to-ask) uma pergunta.
 
 *** =instructions
-- Check out the structure of `movie_selection`.
-- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
-- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
+Chegou a sua vez:
+
+* Busque ajuda sobre a função `max`
+
+* Pergunte ao `R`sobre `"regression"` (sim, as expressões devem ser buscadas em inglês)
 
 *** =hint
-- Use `str()` for the first instruction.
-- For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
-- For the plot, use `plot(x = ..., y = ..., col = ...)`.
+
 
 *** =pre_exercise_code
 ```{r}
