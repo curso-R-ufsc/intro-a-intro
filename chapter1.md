@@ -89,8 +89,8 @@ Leia as intruções no script.
 *** =sct
 ```{r}
 test_output_contains(15,
-                     incorrect_msg = "Você precisa escrever o número 15!")
-success_msg("Muito bem!! Viu como é fácil imprimir algo?")
+                     incorrect_msg = "Voce precisa escrever o numero 15!")
+success_msg("Muito bem!! Viu como e facil imprimir algo?")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:63e01c769d
