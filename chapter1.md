@@ -89,9 +89,7 @@ Leia as intruções no script.
 
 *** =sct
 ```{r}
-test_function("print", args = 15,
-              not_called_msg = "You didn't call `str()`!",
-              incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
+
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:63e01c769d
