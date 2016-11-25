@@ -125,7 +125,7 @@ Chegou a sua vez:
 
 *** =sample_code
 ```{r}
-# Peça ajuda sobre a função 'max'
+# Peça ajuda sobre a função 'max': help(max)
 
 # Agora busque pela expressão "regression" (as aspas são necessárias aqui)
 # help.search("regression")
@@ -145,7 +145,7 @@ help.search("regression")
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-test_function("help", args = "object",
+test_function("help", args = "max",
               not_called_msg = "Você se esqueceu de usar a `?`",
               incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
 
