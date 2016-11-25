@@ -141,7 +141,7 @@ help(max)
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-test_function("help", args = max,
+test_function("help", args = "max",
               not_called_msg = "Você se esqueceu de usar a `?`",
               incorrect_msg = "Tem certeza que buscou pelo funcao `max`?")
 
