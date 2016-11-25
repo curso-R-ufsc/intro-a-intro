@@ -134,9 +134,9 @@ Chegou a sua vez:
 *** =solution
 ```{r}
 # Peça ajuda sobre a função 'max': help(max)
-help(max)
+?max
 # Agora busque pela expressão "regression" (as aspas são necessárias aqui)
-help.search("regression")
+??"regression"
 ```
 
 *** =sct
@@ -150,7 +150,6 @@ test_student_typed(c("help(max)",
 test_student_typed(c('help.search("regression")',
                      '??"regression"'),
                    not_typed_msg = "Você se esqueceu de usar a `?` ou a funcao help(max)")
-test_function("help.search", args = "regression")
 
 
 success_msg("Muito bem! Agora que voce ja sabe tirar sua duvidas, vamos colocar algumas na sua mente!")
