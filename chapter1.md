@@ -40,6 +40,7 @@ Apenas aperte o botão "Submit" para começarmos o curso
 
 *** =sct
 ```{r}
+test_output_contains()
 success_msg("Bora lá!")
 ```
 
@@ -72,7 +73,6 @@ Leia as intruções no script.
 
 # Agora que você sabe como não fazer nada, digite 15 na linha abaixo
 
-
 ```
 
 *** =solution
@@ -84,12 +84,12 @@ Leia as intruções no script.
 
 # Agora que você sabe como não fazer nada, digite 15 na linha abaixo
 15
-
 ```
 
 *** =sct
 ```{r}
-
+test_output_contains(15)
+success_msg("Muito bem!! Viu como é fácil imprimir algo?")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:63e01c769d
