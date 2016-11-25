@@ -40,7 +40,7 @@ Apenas aperte o botão "Submit" para começarmos o curso
 
 *** =sct
 ```{r}
-test_output_contains()
+
 success_msg("Bora lá!")
 ```
 
