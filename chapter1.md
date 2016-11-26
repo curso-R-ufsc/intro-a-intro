@@ -35,7 +35,7 @@ dados <- rnorm(1e6) # 1 milhão de dados aleatórios
 # com distribuição normal
 
 mean(dados) # média dos dados
-hist(dados, main = "Histograma que criei", ylab = "Frequência") # faz histograma dos dados
+hist(dados, main = "Histograma que criei", ylab = "Frequencia") # faz histograma dos dados
 ```
 
 *** =solution
@@ -57,7 +57,7 @@ test_function('mean', args = "x", not_called_msg = 'Você não precisa mudar nad
               incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
 test_function('hist', args = c("x", "main", "ylab"), not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
               incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
-success_msg("Dê uma ohada no console, observe que a média dos dados foi impressa. E um gráfico criado!")
+success_msg("Observe o console: a média dos dados foi impressa. E um grafico criado!")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:dcb32212d2
