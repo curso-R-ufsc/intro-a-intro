@@ -57,7 +57,7 @@ test_function('mean', args = "x", not_called_msg = 'Você não precisa mudar nad
               incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
 test_function('hist', args = c("x", "main", "ylab"), not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
               incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
-success_msg("Observe o console: a média dos dados foi impressa. E um grafico criado!")
+success_msg("Observe o console: a media dos dados foi impressa. E um grafico criado ao lado do script. Rapido, não?!")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:dcb32212d2
