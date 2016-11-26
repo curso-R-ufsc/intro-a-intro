@@ -20,7 +20,7 @@ Este "curso" no DataCamp é apenas uma apresentação muito rápida daquilo que 
 
 
 *** =instructions
-Apenas aperte o botão "Submit" para começarmos o curso
+Apenas aperte o botão "Submit" para ver o `R`em ação!
 *** =hint
 
 *** =pre_exercise_code
@@ -30,17 +30,33 @@ Apenas aperte o botão "Submit" para começarmos o curso
 
 *** =sample_code
 ```{r}
+# Você não precisa entender isso ainda
+dados <- rnorm(1e6) # 1 milhão de dados aleatórios
+# com distribuição normal
 
+mean(dados) # média dos dados
+hist(dados) # faz histograma dos dados
 ```
 
 *** =solution
 ```{r}
+# Você não precisa entender isso ainda
+dados <- rnorm(1e6) # 1 milhão de dados aleatórios
+# com distribuição normal
 
+mean(dados) # média dos dados
+hist(dados) # faz histograma dos dados
 ```
 
 *** =sct
 ```{r}
-
+test_an_object("dados")
+test_function('rnorm', args = "1e6",
+              incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
+test_function('mean', args = "dados",
+              incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
+test_function('hist', args = "dados",
+              incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
 success_msg("Bora la!")
 ```
 
