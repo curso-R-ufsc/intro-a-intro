@@ -51,11 +51,11 @@ hist(dados) # faz histograma dos dados
 *** =sct
 ```{r}
 test_an_object("dados")
-test_function('rnorm', args = "1e6",
+test_function('rnorm', args = "1e6", not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
               incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
-test_function('mean', args = "dados",
+test_function('mean', args = "dados", not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
               incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
-test_function('hist', args = "dados",
+test_function('hist', args = "dados", not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
               incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
 success_msg("Bora la!")
 ```
