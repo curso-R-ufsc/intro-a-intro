@@ -35,7 +35,7 @@ dados <- rnorm(1e6) # 1 milhão de dados aleatórios
 # com distribuição normal
 
 mean(dados) # média dos dados
-hist(dados) # faz histograma dos dados
+hist(dados, main = "Histograma que criei", ylab = "Frequência") # faz histograma dos dados
 ```
 
 *** =solution
@@ -45,17 +45,17 @@ dados <- rnorm(1e6) # 1 milhão de dados aleatórios
 # com distribuição normal
 
 mean(dados) # média dos dados
-hist(dados) # faz histograma dos dados
+hist(dados, main = "Histograma que criei", ylab = "Frequência") # faz histograma dos dados
 ```
 
 *** =sct
 ```{r}
 test_an_object("dados")
-test_function('rnorm', args = "1e6", not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
+test_function('rnorm', args = 'n', not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
               incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
-test_function('mean', args = "dados", not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
+test_function('mean', args = "x", not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
               incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
-test_function('hist', args = "dados", not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
+test_function('hist', args = c("x", "main", "ylab"), not_called_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"',
               incorrect_msg = 'Você não precisa mudar nada no código. Resete o exercício e apenas clique em "Submit"')
 success_msg("Bora la!")
 ```
