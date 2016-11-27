@@ -1,6 +1,7 @@
 ---
 title       : Tipos de dados
 description : Números, caracteres e lógicos
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:e83dac591d
 ## Objetos
 
