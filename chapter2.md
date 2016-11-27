@@ -60,6 +60,63 @@ test_output_contains('100', incorrect_msg = "Lembre de imprimir `x`")
 test_output_contains('"Brasil"', incorrect_msg = "Lembre de imprimir `pais`")
 ```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:f7addb8664
+## Criando vetores
+
+As variáveis criadas no `R`não precisam ter apenas um valor. Na verdade elas costumarão ter inúmeros valores. Para unir diversos valores em uma única variável, basta concatenar eles por meio da função `c()`. Por exemplo `num <- c(10, 20, 30)` ou ainda `txt <- c("vetor", "de", "textos")`. Desta forma você pode criar vetores de todos os tipos de variáveis e com o tamanho que desejar.
+
+
+*** =instructions
+
+Vamos criar um vetor para cada tipo básico de dado:
+* Defina **numero** contendo 10, 20 e 30
+* Defina **inteiro**: contendo 5L, 10L e 15L
+* Defina **texto** contendo os elementos "vetor", "de" e "textos"
+* Defina **logico** com TRUE, FALSE e NA
+
+*** =hint
+Lembre-se que um objeto é criado com o operador `<-`. Exemplo: `logico <- c(TRUE, FALSE, NA)`.
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+# crie o vetor numero
+
+
+# Crie um vetor de inteiros. Nao esqueca do L
+
+
+# Crie um vetor de texto. Nao esqueca dos aspas
+
+
+# Crie um vetor logico. O valores sao sempre maiúsculo
+
+
+```
+
+*** =solution
+```{r}
+# crie o vetor numero
+numero <- c(10, 20, 30)
+
+# Crie um vetor de inteiros. Nao esqueca do L
+inteiro <- c(5L, 10L, 15L) 
+
+# Crie um vetor de texto. Nao esqueca dos aspas
+texto <- c("vetor", "de", "textos")
+
+# Crie um vetor logico. O valores sao sempre maiúsculo
+logico <- c(TRUE, FALSE, TRUE)
+
+```
+
+*** =sct
+```{r}
+
+```
 --- type:NormalExercise lang:r xp:100 skills:1 key:5d0ebb9c4c
 ## Tipos de dados
 
