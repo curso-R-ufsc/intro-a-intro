@@ -15,7 +15,8 @@ Crie os seguintes objetos:
 * Defina **x** como 100 usando `<-`
 * Defina **pais** como  "Brasil" (não esqueça das aspas) usando `=`
 
-E então imprima
+E então imprima-os:
+
 * Imprima **x**
 * Imprima **pais**
 
@@ -40,9 +41,9 @@ E então imprima
 
 *** =solution
 ```{r}
-# Defina x como 100 usando `<-`
+# Defina x como 100. Use `<-`
 x <- 100
-# Defina pais como  "Brasil" (não esqueça das aspas) usando `=`
+# Defina pais como  "Brasil" usando `=` (não esqueça das aspas)
 pais = "Brasil"
 # Imprima x
 x
@@ -52,10 +53,11 @@ pais
 
 *** =sct
 ```{r}
-test_object("x")
-test_object("pais")
-test_function("<-")
-test_function("=")
+test_object(undefined_msg = )
+test_student_typed("x <- 100", not_typed_msg = "Verifique o valor que atribuiu a `x`?")
+test_student_typed('pais <- "Brasil"', not_typed_msg = "Tem certeza de que digitou corretamente o `pais`?")
+test_output_contains('100', incorrect_msg = "Lembre de imprimir `x`")
+test_output_contains('"Brasil"', incorrect_msg = "Lembre de imprimir `pais`")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:5d0ebb9c4c
