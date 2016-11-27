@@ -102,7 +102,7 @@ Lembre-se que um objeto é criado com o operador `<-`. Exemplo: `logico <- c(TRU
 # Crie um vetor de texto. Nao esqueca dos aspas
 
 
-# Crie um vetor logico. O valores são sempre maiúsculo
+# Crie um vetor logico. Os valores precisam ser maiúsculos
 
 
 ```
@@ -118,7 +118,7 @@ inteiro <- c(5L, 10L, 15L)
 # Crie um vetor de texto. Nao esqueca dos aspas
 texto <- c("vetor", "de", "textos")
 
-# Crie um vetor logico. O valores são sempre maiúsculo
+# Crie um vetor logico. Os valores precisam ser maiúsculos
 logico <- c(TRUE, FALSE, NA)
 
 ```
@@ -129,6 +129,8 @@ test_object("numero")
 test_object("inteiro")
 test_object("texto")
 test_object("logico")
+
+success_msg("Parabens! Agora vamos conhecer um pouco mais sobre os tipos dos dados")
 ```
 
 
