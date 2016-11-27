@@ -76,6 +76,7 @@ Vamos criar um vetor para cada tipo básico de dado:
 
 *** =hint
 Lembre-se que um objeto é criado com o operador `<-`. Exemplo: `logico <- c(TRUE, FALSE, NA)`.
+
 *** =pre_exercise_code
 ```{r}
 
@@ -115,7 +116,10 @@ logico <- c(TRUE, FALSE, TRUE)
 
 *** =sct
 ```{r}
-
+test_object("numero")
+test_object("inteiro")
+test_object("texto")
+test_object("logico")
 ```
 --- type:NormalExercise lang:r xp:100 skills:1 key:5d0ebb9c4c
 ## Tipos de dados
