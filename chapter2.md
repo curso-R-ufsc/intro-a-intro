@@ -111,7 +111,7 @@ inteiro <- c(5L, 10L, 15L)
 texto <- c("vetor", "de", "textos")
 
 # Crie um vetor logico. O valores são sempre maiúsculo
-logico <- c(TRUE, FALSE, TRUE)
+logico <- c(TRUE, FALSE, NA)
 
 ```
 
