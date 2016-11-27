@@ -60,7 +60,6 @@ pais
 
 *** =sct
 ```{r}
-test_object(undefined_msg = )
 test_student_typed("x <- 100", not_typed_msg = "Verifique o valor que atribuiu a `x`?")
 test_student_typed('pais <- "Brasil"', not_typed_msg = "Tem certeza de que digitou corretamente o `pais`?")
 test_output_contains('100', incorrect_msg = "Lembre de imprimir `x`")
