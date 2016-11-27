@@ -2,7 +2,7 @@
 title       : Tipos de dados
 description : Números, caracteres e lógicos
 
---- type:NormalExercise lang:r xp:100 skills:1 key:e83dac591d
+--- type:NormalExercise lang:r xp:100 skills:1 key:731358faec
 ## Objetos
 
 Nesta capítulo veremos um pouco sobre o objeto mais básico do R, o vetor, e como gerenciar sua área de trabalho. Aprenderemos, basicamente, algumas formas de criar e remover um objeto (no caso um vetor), como verificar suas propriedades e alterar seus elementos. Ao final veremos como salvar e carregar sua área de trabalho e/ou objetos específicos.
@@ -94,7 +94,7 @@ Lembre-se que um objeto é criado com o operador `<-`. Exemplo: `logico <- c(TRU
 # Crie um vetor de texto. Nao esqueca dos aspas
 
 
-# Crie um vetor logico. O valores sao sempre maiúsculo
+# Crie um vetor logico. O valores são sempre maiúsculo
 
 
 ```
@@ -110,7 +110,7 @@ inteiro <- c(5L, 10L, 15L)
 # Crie um vetor de texto. Nao esqueca dos aspas
 texto <- c("vetor", "de", "textos")
 
-# Crie um vetor logico. O valores sao sempre maiúsculo
+# Crie um vetor logico. O valores são sempre maiúsculo
 logico <- c(TRUE, FALSE, TRUE)
 
 ```
@@ -122,6 +122,7 @@ test_object("inteiro")
 test_object("texto")
 test_object("logico")
 ```
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:5d0ebb9c4c
 ## Tipos de dados
 
