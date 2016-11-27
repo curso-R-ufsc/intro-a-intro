@@ -2,7 +2,13 @@
 title       : Tipos de dados
 description : Números, caracteres e lógicos
 
---- type:NormalExercise lang:r xp:100 skills:1 key:731358faec
+
+
+?
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:0f9f2276da
 ## Objetos
 
 Nesta capítulo veremos um pouco sobre o objeto mais básico do R, o vetor, e como gerenciar sua área de trabalho. Aprenderemos, basicamente, algumas formas de criar e remover um objeto (no caso um vetor), como verificar suas propriedades e alterar seus elementos. Ao final veremos como salvar e carregar sua área de trabalho e/ou objetos específicos.
@@ -59,9 +65,11 @@ test_student_typed("x <- 100", not_typed_msg = "Verifique o valor que atribuiu a
 test_student_typed('pais <- "Brasil"', not_typed_msg = "Tem certeza de que digitou corretamente o `pais`?")
 test_output_contains('100', incorrect_msg = "Lembre de imprimir `x`")
 test_output_contains('"Brasil"', incorrect_msg = "Lembre de imprimir `pais`")
+
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:f7addb8664
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:6b51fb04d2
 ## Criando vetores
 
 As variáveis criadas no `R`não precisam ter apenas um valor. Na verdade elas costumarão ter inúmeros valores. Para unir diversos valores em uma única variável, basta concatenar eles por meio da função `c()`. Por exemplo `num <- c(10, 20, 30)` ou ainda `txt <- c("vetor", "de", "textos")`. Desta forma você pode criar vetores de todos os tipos de variáveis e com o tamanho que desejar.
@@ -123,7 +131,8 @@ test_object("texto")
 test_object("logico")
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:5d0ebb9c4c
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:0001083ccf
 ## Tipos de dados
 
 Quando você começar a manipular os dados vai verificar que eles são guardados de diferças formas: alguns são valores numéricos (renda de uma família), outros são texto (como tuítes feitos com a '#foraTemer'), ou variáveis categóricas armazenadas como texto (se uma instituição é "pública" ou "privada"), ou ainda vetores lógicos (que não serão comuns em bases de dados, mas você precisará criá-los e manipulá-los com desenvoltura para selecionar os dados que deseja).
@@ -164,6 +173,5 @@ test_student_typed("class(24)")
 test_student_typed("class(24)")
 test_student_typed("class(classes)")
 test_student_typed("class(logico)")
-
 
 ```
