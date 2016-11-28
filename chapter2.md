@@ -133,7 +133,7 @@ success_msg("Parabens! Agora vamos conhecer um pouco mais sobre os tipos dos dad
 Quando você começar a manipular os dados vai verificar que eles são guardados de diferças formas: alguns são valores numéricos (renda de uma família), outros são texto (como tuítes feitos com a '#foraTemer'), ou variáveis categóricas armazenadas como texto (se uma instituição é "pública" ou "privada"), ou ainda vetores lógicos (que não serão comuns em bases de dados, mas você precisará criá-los e manipulá-los com desenvoltura para selecionar os dados que deseja).
 
 *** =instructions
-Os vetores que você criou no último exercício estão em sua área de trabalho. Verifique a classe de cada um deles.
+Os vetores que você criou no último exercício estão em sua área de trabalho. Verifique a classe de cada um deles com a função `class()`.
 
 *** =hint
 
@@ -175,5 +175,5 @@ test_student_typed("class(numero)")
 test_student_typed("class(inteiro)")
 test_student_typed("class(texto)")
 test_student_typed("class(logico)")
-success_msg("Muito bem!! Agora vamos ver outra coisa...")
+success_msg("Muito bem!! Leia a classe de cada um dos objetos no console.")
 ```
