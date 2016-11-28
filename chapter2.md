@@ -55,7 +55,7 @@ pais
 *** =sct
 ```{r}
 test_student_typed("x <- 100", not_typed_msg = "Verifique o valor que atribuiu a `x`?")
-test_student_typed('pais <- "Brasil"', not_typed_msg = "Tem certeza de que digitou corretamente o `pais`?")
+test_student_typed('pais = "Brasil"', not_typed_msg = "Tem certeza de que digitou corretamente o `pais`?")
 test_output_contains('100', incorrect_msg = "Lembre de imprimir `x`")
 test_output_contains('"Brasil"', incorrect_msg = "Lembre de imprimir `pais`")
 
@@ -65,12 +65,15 @@ test_output_contains('"Brasil"', incorrect_msg = "Lembre de imprimir `pais`")
 --- type:NormalExercise lang:r xp:100 skills:1 key:6b51fb04d2
 ## Criando vetores
 
-As variáveis criadas no `R`não precisam ter apenas um valor. Na verdade elas costumarão ter inúmeros valores. Para unir diversos valores em uma única variável, basta concatenar eles por meio da função `c()`. Por exemplo `num <- c(10, 20, 30)` ou ainda `txt <- c("vetor", "de", "textos")`. Desta forma você pode criar vetores de todos os tipos de variáveis e com o tamanho que desejar.
+As variáveis criadas no `R`não precisam ter apenas um valor. Na verdade elas costumarão ter inúmeros valores. Para unir diversos valores em uma única variável, basta concatenar eles por meio da função `c()`.
+
+Por exemplo `num <- c(10, 20, 30)` ou ainda `txt <- c("vetor", "de", "textos")`. Desta forma você pode criar vetores de todos os tipos de variáveis e com o tamanho que desejar.
 
 
 *** =instructions
 
 Vamos criar um vetor para cada tipo básico de dado:
+
 * Defina **numero** contendo 10, 20 e 30
 * Defina **inteiro**: contendo 5L, 10L e 15L
 * Defina **texto** contendo os elementos "vetor", "de" e "textos"
